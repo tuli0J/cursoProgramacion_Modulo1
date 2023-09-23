@@ -163,15 +163,17 @@
             PersonasDataGridView.AllowUserToAddRows = false;
             PersonasDataGridView.AllowUserToDeleteRows = false;
             PersonasDataGridView.AutoGenerateColumns = false;
+            PersonasDataGridView.BackgroundColor = SystemColors.ButtonHighlight;
             PersonasDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             PersonasDataGridView.Columns.AddRange(new DataGridViewColumn[] { nombreDataGridViewTextBoxColumn, estaturaDataGridViewTextBoxColumn, edadDataGridViewTextBoxColumn, generoDataGridViewTextBoxColumn, fechaNacimientoDataGridViewTextBoxColumn });
             PersonasDataGridView.DataSource = PersonasBindingSource;
+            PersonasDataGridView.GridColor = SystemColors.HighlightText;
             PersonasDataGridView.Location = new Point(2, 338);
             PersonasDataGridView.Name = "PersonasDataGridView";
             PersonasDataGridView.ReadOnly = true;
             PersonasDataGridView.RowHeadersWidth = 51;
             PersonasDataGridView.RowTemplate.Height = 29;
-            PersonasDataGridView.Size = new Size(680, 267);
+            PersonasDataGridView.Size = new Size(756, 267);
             PersonasDataGridView.TabIndex = 12;
             // 
             // PersonasBindingSource
@@ -217,17 +219,17 @@
             // fechaNacimientoDataGridViewTextBoxColumn
             // 
             fechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNacimiento";
-            fechaNacimientoDataGridViewTextBoxColumn.HeaderText = "FechaNacimiento";
+            fechaNacimientoDataGridViewTextBoxColumn.HeaderText = "Fecha de Nacimiento";
             fechaNacimientoDataGridViewTextBoxColumn.MinimumWidth = 6;
             fechaNacimientoDataGridViewTextBoxColumn.Name = "fechaNacimientoDataGridViewTextBoxColumn";
             fechaNacimientoDataGridViewTextBoxColumn.ReadOnly = true;
-            fechaNacimientoDataGridViewTextBoxColumn.Width = 125;
+            fechaNacimientoDataGridViewTextBoxColumn.Width = 200;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(694, 608);
+            ClientSize = new Size(764, 608);
             Controls.Add(PersonasDataGridView);
             Controls.Add(MostrarButton);
             Controls.Add(CrearButton);
