@@ -99,19 +99,19 @@ namespace Vista
                 movimiento = new Movimiento(cuenta, DateTime.Now, monto, new TipoMovimiento(TipoMovimientoComboBox.SelectedText));
 
                 //listaMovimientos.Add(movimiento);
-                MoviientosListBox.Items.Add("Deposito a la cuenta N."+cuenta.Codigo+"por la cantidad de Lps."+movimiento.Monto+
-                    "con fecha"+movimiento.Fecha.ToShortDateString());
+                MovientosListBox.Items.Add("Deposito a la cuenta N." + cuenta.Codigo + "por la cantidad de Lps." + movimiento.Monto +
+                    "con fecha" + movimiento.Fecha.ToShortDateString());
 
                 SaldoTextBox.Text = cuenta.Saldo.ToString();
             }
 
-            else if(TipoMovimientoComboBox.Text == "Retiro")
+            else if (TipoMovimientoComboBox.Text == "Retiro")
             {
                 bool retiro = cuenta.Retirar(monto);
-                if(retiro)
+                if (retiro)
                 {
                     movimiento = new Movimiento(cuenta, DateTime.Now, monto, new TipoMovimiento(TipoMovimientoComboBox.SelectedText));
-                    MoviientosListBox.Items.Add("Retiro a la cuenta N." + 
+                    MovientosListBox.Items.Add("Retiro a la cuenta N." +
                     cuenta.Codigo + "por la cantidad de Lps." + movimiento.Monto +
                     "con fecha" + movimiento.Fecha.ToShortDateString());
 

@@ -50,7 +50,7 @@
             label7 = new Label();
             AperturarButton = new Button();
             AgregarButton = new Button();
-            MoviientosListBox = new ListBox();
+            MovientosListBox = new ListBox();
             errorProvider1 = new ErrorProvider(components);
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -256,14 +256,14 @@
             AgregarButton.UseVisualStyleBackColor = true;
             AgregarButton.Click += AgregarButton_Click;
             // 
-            // MoviientosListBox
+            // MovientosListBox
             // 
-            MoviientosListBox.FormattingEnabled = true;
-            MoviientosListBox.ItemHeight = 25;
-            MoviientosListBox.Location = new Point(12, 415);
-            MoviientosListBox.Name = "MoviientosListBox";
-            MoviientosListBox.Size = new Size(1152, 254);
-            MoviientosListBox.TabIndex = 4;
+            MovientosListBox.FormattingEnabled = true;
+            MovientosListBox.ItemHeight = 25;
+            MovientosListBox.Location = new Point(12, 415);
+            MovientosListBox.Name = "MovientosListBox";
+            MovientosListBox.Size = new Size(1152, 254);
+            MovientosListBox.TabIndex = 4;
             // 
             // errorProvider1
             // 
@@ -274,7 +274,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1186, 690);
-            Controls.Add(MoviientosListBox);
+            Controls.Add(MovientosListBox);
             Controls.Add(AgregarButton);
             Controls.Add(AperturarButton);
             Controls.Add(groupBox3);
@@ -317,7 +317,7 @@
         private Label label7;
         private Button AperturarButton;
         private Button AgregarButton;
-        private ListBox MoviientosListBox;
+        private ListBox MovientosListBox;
         private ErrorProvider errorProvider1;
     }
 }
